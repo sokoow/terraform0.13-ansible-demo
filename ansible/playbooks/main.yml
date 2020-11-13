@@ -1,0 +1,7 @@
+---
+- name: deploy nginx
+  hosts: webserver_pool
+  remote_user: "root"
+  become: true
+  roles:
+    - geerlingguy.nginx
